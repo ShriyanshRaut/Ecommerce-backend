@@ -3,5 +3,6 @@ const asyncHandler = (fn) =>{
         Promise.resolve(fn(req, res, next)).catch(next)
     }
 }
+console.log("ASYNC HANDLER WRAPPED");
 
-export { asyncHandler }
+export default  asyncHandler 

@@ -1,25 +1,33 @@
-import express from "express"
-import cors from "cors"
-import cookieParser from "cookie-parser"
-import helmet from "helmet"
-import errorMiddleware from "./middlewares/error.middleware.js"
+import express from "express";
+import cors from "cors";
+import cookieParser from "cookie-parser";
+import helmet from "helmet";
 
-const app = express()
+import errorMiddleware from "./middlewares/error.middleware.js";
+import userRoutes from "./routes/user.routes.js";
 
+const app = express();
+
+// Security + parsing
+app.use(helmet());
+app.use(cors({
+  origin: process.env.CORS_ORIGIN,
+  credentials: true
+}));
+
+app.use(express.json({ limit: "16kb" }));
+app.use(express.urlencoded({ extended: true, limit: "16kb" }));
+app.use(cookieParser());
+
+// Health check
+app.get("/health", (req, res) => {
+  res.status(200).json({ status: "ok" });
+});
+
+// Routes
+app.use("/api/v1/users", userRoutes);
+
+// Error middleware (ALWAYS LAST)
 app.use(errorMiddleware);
 
-app.use(helmet())
-app.use(cors({
-    origin: process.env.CORS_ORIGIN,
-    credentials: true
-}))
-app.use(express.json({ limit: "16kb" }))
-app.use(express.urlencoded({ extended: true, limit: "16kb" }))
-app.use(cookieParser())
-
-// health check
-app.get("/health", (req, res) => {
-    res.status(200).json({ status: "ok" })
-})
-
-export { app }
+export { app };
