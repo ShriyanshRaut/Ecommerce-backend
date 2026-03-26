@@ -2,7 +2,7 @@ import { Router } from "express";
 import authMiddleware from "../middlewares/auth.middleware.js";
 import adminMiddleware from "../middlewares/admin.middleware.js";
 import { registerUser, loginUser, getCurrentUser } from "../controllers/user.controller.js";
-
+import { protect } from "../middlewares/auth.middleware.js";
 const router = Router();
 router.get(
   "/admin-test",

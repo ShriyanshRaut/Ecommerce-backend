@@ -3,7 +3,8 @@ import ApiError from "../utils/ApiError.js";
 import asyncHandler from "../utils/asyncHandler.js";
 import User from "../models/user.model.js";
 
-const authMiddleware = asyncHandler(async (req, res, next) => {
+// Protect routes (authentication)
+const protect = asyncHandler(async (req, res, next) => {
   const authHeader = req.headers.authorization;
 
   if (!authHeader || !authHeader.startsWith("Bearer ")) {
@@ -19,17 +20,25 @@ const authMiddleware = asyncHandler(async (req, res, next) => {
     throw new ApiError(401, "Unauthorized: Invalid token");
   }
 
-  // Fetch fresh user from DB
   const user = await User.findById(decoded._id).select("-password -refreshToken");
 
   if (!user) {
     throw new ApiError(401, "Unauthorized: User not found");
   }
 
-  //  Attach full user document
   req.user = user;
 
   next();
 });
 
-export default authMiddleware;
+// Admin authorization middleware
+const admin = (req, res, next) => {
+  if (req.user && req.user.role === "admin") {
+    next();
+  } else {
+    throw new ApiError(403, "Admin access required");
+  }
+};
+
+export { protect, admin };
+export default protect;
