@@ -3,16 +3,46 @@ import { createProductSchema } from "../validators/product.validator.js";
 import { createProductService } from "../services/product.service.js";
 import ApiError from "../utils/ApiError.js";
 import ApiResponse from "../utils/ApiResponse.js";
+import cloudinary from "../config/cloudinary.js";
+import fs from "fs";
 
 export const createProduct = asyncHandler(async (req, res) => {
+  // 1. Validate body
   const parsed = createProductSchema.safeParse(req.body);
 
   if (!parsed.success) {
-    const msg = parsed.error?.issues?.[0]?.message || "Invalid input";
-    throw new ApiError(400, msg);
+  const msg =
+    parsed.error && Array.isArray(parsed.error.issues) && parsed.error.issues.length > 0
+      ? parsed.error.issues[0].message
+      : "Invalid input";
+
+  throw new ApiError(400, msg);
+}
+
+  let imageUrl = "";
+
+  // 2. Handle image upload
+  if (req.file) {
+    const result = await cloudinary.uploader.upload(req.file.path, {
+      folder: "products",
+    });
+
+    imageUrl = result.secure_url;
+
+    // delete temp file
+    fs.unlinkSync(req.file.path);
+  } else {
+    throw new ApiError(400, "Image is required");
   }
 
-  const product = await createProductService(parsed.data);
+  // 3. Merge image into data
+  const productData = {
+    ...parsed.data,
+    images: [imageUrl], // matches your schema
+  };
+
+  //  4. Save product
+  const product = await createProductService(productData);
 
   return res
     .status(201)

@@ -48,3 +48,12 @@
 2026-03-26T12:22:23.952Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
 2026-03-26T12:22:23.962Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
 2026-03-26T12:22:23.975Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T13:18:02.809Z [ERROR]: POST /api/v1/products - 401 - Unauthorized: No token provided
+2026-03-26T13:18:37.056Z [ERROR]: POST /api/v1/products - 400 - Invalid input: expected object, received undefined
+2026-03-26T13:24:16.466Z [ERROR]: POST /api/v1/products - 500 - Cannot read properties of undefined (reading '0')
+2026-03-26T13:26:14.293Z [ERROR]: POST /api/v1/products - 500 - Cannot read properties of undefined (reading '0')
+2026-03-26T13:26:27.007Z [ERROR]: POST /api/v1/products - 500 - Cannot read properties of undefined (reading '0')
+2026-03-26T13:28:58.987Z [ERROR]: POST /api/v1/products - 500 - Cannot read properties of undefined (reading '0')
+2026-03-26T13:32:43.055Z [ERROR]: POST /api/v1/products - 500 - Must supply api_key
+2026-03-26T13:35:56.363Z [ERROR]: POST /api/v1/products - 500 - Invalid cloud_name dm7mcult
+2026-03-26T13:37:01.586Z [ERROR]: POST /api/v1/products - 500 - Invalid cloud_name dm7mcult
