@@ -1,0 +1,62 @@
+2026-03-26T12:16:37.670Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:16:37.693Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:16:37.719Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:16:37.746Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:16:37.769Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:16:37.787Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:16:37.800Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:16:37.815Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:16:37.828Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:16:37.839Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:16:37.846Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:16:37.854Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:16:37.863Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:16:37.878Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:16:37.885Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:16:37.896Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:16:37.904Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:16:37.914Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:16:37.922Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:16:37.931Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:17:17.128Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:17:17.136Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:17:17.145Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:17:17.154Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:17:17.164Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:17:17.176Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:17:17.189Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:17:17.207Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:17:17.218Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:17:17.229Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:17:17.240Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:17:17.250Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:17:17.259Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:17:17.267Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:17:17.281Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:17:17.288Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:17:17.302Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:17:17.314Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:17:17.325Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:17:17.334Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:22:23.853Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:22:23.868Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:22:23.888Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:22:23.904Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:22:23.915Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:22:23.930Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:22:23.941Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:22:23.952Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:22:23.962Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T12:22:23.975Z [ERROR]: GET /api/v1/cart - 401 - Unauthorized: Invalid token
+2026-03-26T13:18:02.809Z [ERROR]: POST /api/v1/products - 401 - Unauthorized: No token provided
+2026-03-26T13:18:37.056Z [ERROR]: POST /api/v1/products - 400 - Invalid input: expected object, received undefined
+2026-03-26T13:24:16.466Z [ERROR]: POST /api/v1/products - 500 - Cannot read properties of undefined (reading '0')
+2026-03-26T13:26:14.293Z [ERROR]: POST /api/v1/products - 500 - Cannot read properties of undefined (reading '0')
+2026-03-26T13:26:27.007Z [ERROR]: POST /api/v1/products - 500 - Cannot read properties of undefined (reading '0')
+2026-03-26T13:28:58.987Z [ERROR]: POST /api/v1/products - 500 - Cannot read properties of undefined (reading '0')
+2026-03-26T13:32:43.055Z [ERROR]: POST /api/v1/products - 500 - Must supply api_key
+2026-03-26T13:35:56.363Z [ERROR]: POST /api/v1/products - 500 - Invalid cloud_name dm7mcult
+2026-03-26T13:37:01.586Z [ERROR]: POST /api/v1/products - 500 - Invalid cloud_name dm7mcult
+2026-03-29T05:15:37.443Z [ERROR]: GET /api/v1/products - 500 - getAllProductsService is not defined
+2026-03-29T05:15:59.708Z [ERROR]: POST /api/v1/products - 401 - Unauthorized: Invalid token
+2026-03-29T05:16:14.419Z [ERROR]: GET /api/v1/products - 500 - getAllProductsService is not defined
