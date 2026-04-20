@@ -3,7 +3,8 @@ import Product from "../models/product.model.js";
 import ApiError from "../utils/ApiError.js";
 
 export const getCartService = async (userId) => {
-  let cart = await Cart.findOne({ user: userId });
+  let cart = await Cart.findOne({ user: userId })
+    .populate("items.productId"); 
 
   if (!cart) {
     cart = await Cart.create({ user: userId, items: [] });
@@ -33,12 +34,13 @@ export const addToCartService = async (userId, productId, quantity) => {
     cart.items[itemIndex].quantity += quantity;
   } else {
     cart.items.push({
-      productId,
-      quantity
-    });
+  productId,
+  quantity: quantity || 1
+});
   }
 
   await cart.save();
 
-  return cart;
+  // 🔥 IMPORTANT: populate AFTER save
+  return await cart.populate("items.productId");
 };
