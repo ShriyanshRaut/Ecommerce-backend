@@ -1,4 +1,4 @@
-# 🛒 NexusCart — Full Stack E-commerce Platform
+Full Stack E-commerce Platform
 
 A scalable, production-ready full stack e-commerce platform built with React, Node.js, Express, and MongoDB. Features a clean service-layer backend, real-time Razorpay payments, Redis caching, and a planned AI recommendation microservice.
 
